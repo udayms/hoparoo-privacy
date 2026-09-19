@@ -35,6 +35,11 @@
     font-size: 19px;
     margin-top: 36px;
   }
+  h3 {
+    font-size: 16px;
+    margin-top: 26px;
+    margin-bottom: 6px;
+  }
   .card {
     background: #ffffff;
     border-radius: 16px;
@@ -52,10 +57,11 @@
 </head>
 <body>
   <h1>Hoparoo Privacy Policy</h1>
-  <div class="updated">Last updated: August 6, 2026</div>
+  <div class="updated">Last updated: September 18, 2026</div>
 
   <div class="card">
-    <strong>The short version:</strong> Hoparoo does not collect, transmit, sell, or share any of your data. Everything you create in the app — routines, tasks, activity history, and settings — stays on your device.
+    <strong>The short version:</strong> Everything you create in the app — routines, tasks, activity history, and settings — stays on your device. Hoparoo never sells or shares your data, and never sends anything you or your child typed.
+    <p style="margin-bottom:0">The one thing that does leave the device is anonymous usage data: counts and durations that tell us how the app is used, with no names, no accounts, and no way to identify a device or a person. You can turn it off in <strong>Settings &rsaquo; Anonymous usage data</strong>. The section below says exactly what it contains.</p>
   </div>
 
   <p>Hoparoo ("the app") is a routine-timer app designed for families. This policy explains what happens to your data when you use it.</p>
@@ -74,14 +80,44 @@
     <li>When you restore, you pick a file from your device using the system file picker. Hoparoo reads only the file you select.</li>
   </ul>
 
-  <h2>Analytics, advertising, and tracking</h2>
-  <p>Hoparoo does not use any analytics SDKs, advertising SDKs, or tracking technologies of any kind. There are no third-party services integrated into the app that receive your data.</p>
+  <h2>Anonymous usage data</h2>
+  <p>Hoparoo uses <a href="https://posthog.com">PostHog</a> to understand how the app is used — which features people reach for, where routines get abandoned, whether the defaults are the right ones. This is the only thing the app sends anywhere.</p>
+  <p><strong>How to turn it off:</strong> Settings &rsaquo; Anonymous usage data. It is on by default, and turning it off stops everything described below immediately, including anything not yet sent.</p>
+
+  <h3>What is sent</h3>
+  <p>Only counts, durations, and fixed settings values. Specifically:</p>
+  <ul>
+    <li>That a routine was started or finished, and whether it was completed, paused, or ended early.</li>
+    <li>How big a routine is — how many tasks and subtasks it has, and roughly how long it runs (rounded to the nearest 30 seconds).</li>
+    <li>Which numbered task a routine was stopped on, when one is ended early.</li>
+    <li>That a routine was created, edited, deleted, or reordered.</li>
+    <li>Which settings are chosen — theme, sounds, scene, break lengths, accent colour.</li>
+    <li>That a backup was saved or restored, and how many routines it held.</li>
+    <li>That the app was installed, updated, opened, or closed.</li>
+    <li>Your device model, operating system version, app version, language, and time zone.</li>
+  </ul>
+
+  <h3>What is never sent</h3>
+  <ul>
+    <li><strong>Names.</strong> Routine names, task names, and subtask names never leave the device — not in any event, ever. This is deliberate: children's names end up in routine names ("Ava's bedtime"), so no free-typed text is sent at all.</li>
+    <li><strong>Any account or identity.</strong> Hoparoo has no accounts. No person record is created in PostHog; events are stored with a random identifier generated on your device and nothing else.</li>
+    <li><strong>Your location.</strong> Location lookup from IP address is explicitly disabled.</li>
+    <li><strong>Screen recordings.</strong> Session replay is off.</li>
+    <li><strong>Advertising identifiers.</strong> Hoparoo does not access the advertising ID on either platform, and has no advertising SDKs of any kind.</li>
+  </ul>
+
+  <h2>Advertising</h2>
+  <p>Hoparoo contains no advertising of any kind and no advertising SDKs.</p>
 
   <h2>Permissions</h2>
   <p>Hoparoo may request only the device permissions strictly required for features you use (for example, access to the Files app when you choose to restore a backup). The app does not request microphone, camera, location, or contacts access.</p>
 
   <h2>Children's privacy</h2>
-  <p>Hoparoo is designed to be used by children under parental supervision, alongside a parent or guardian. Because the app collects no personal information and has no account system, no personal information is collected from children of any age.</p>
+  <p>Hoparoo is designed to be used by children under parental supervision, alongside a parent or guardian. The app has no account system and collects no personal information from children of any age.</p>
+  <p>The anonymous usage data described above consists of a randomly generated identifier and counts of in-app activity. It is used solely to maintain, analyse and improve how the app works. It is never used to contact anyone, never used to build a profile of an individual, never used for advertising, and never sold or shared. A parent can switch it off entirely in Settings.</p>
+
+  <h2>Where your data is processed</h2>
+  <p>Anonymous usage data is processed by PostHog, Inc. on servers in the United States, acting on our instructions as a data processor. No other third party receives any data from the app.</p>
 
   <h2>Changes to this policy</h2>
   <p>If this policy changes, the "Last updated" date above will change accordingly. Since Hoparoo has no accounts or contact information stored, we recommend checking this page directly for updates.</p>
